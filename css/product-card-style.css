@@ -1,0 +1,125 @@
+/* import google font */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif, Arial;
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.product-card {
+  height: 500px;
+  width: 800px;
+  margin: 120px auto;
+  display: flex;
+  background: white;
+}
+
+.left-img-col {
+  display: flex;
+  flex: 1;
+}
+
+.left-img-col img {
+  object-fit: contain;
+}
+
+.right-info-col {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.right-info-col h3 {
+  margin-bottom: 15px;
+  font-size: 32px;
+  color: black;
+}
+
+.right-info-col h5 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: lightgray;
+}
+
+.right-info-col p {
+  padding-left: 50px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: black;
+}
+
+.available-colors {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.available-colors span {
+  font-size: 14px;
+  color: black;
+  margin-right: 10px;
+}
+
+.black-color-container,
+.red-color-container,
+.white-color-container {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+.black-color-container {
+  background-color: black;
+}
+
+.red-color-container {
+  background-color: red;
+}
+
+.white-color-container {
+  background-color: white;
+}
+
+.price {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price h4 {
+  font-size: 32px;
+  font-weight: 800;
+  color: black;
+}
+
+.buy-btn {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background: black;
+  border-radius: 15px;
+  transition: color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
